@@ -1,0 +1,96 @@
+
+body {
+    background: rgba(224,224,224);
+    margin: 0px; padding: 0px;
+}
+
+#root {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.vertical {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    /* border: 1px solid black; */
+    /* flex-grow: 0;
+    flex-shrink: 0; */
+}
+.horizontal {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    /* border: 1px solid black; */
+    /* flex-grow: 0;
+    flex-shrink: 0; */
+}
+
+header {
+    position: relative;
+    display: flex; flex-direction: row;
+    box-sizing: border-box;
+    height: 100px; width: 100vw;
+    background: rgb(10,42,50);
+    color: white;
+    padding: 0px 30px;
+    align-items: center;
+}
+
+section {
+    position: relative;
+    display: flex; flex-direction: row;
+    box-sizing: border-box;
+    padding: 30px 30px;
+}
+
+.keyboard {
+    position: relative;
+}
+
+.note-row {
+    position: relative;
+    height: 30px; width: 30px;
+    border-bottom: 1px solid black;
+    background: white;
+}
+
+.note-area {
+    position: absolute;
+    top: 0px; left: 30px;
+}
+
+.note {
+    position: absolute;
+    height: 30px;
+    width: 10px;
+    background: black;
+}
+
+.play-head {
+    position: absolute;
+    top: 0px; left: 0px;
+    height: 200px;
+    width: 1px;
+    background: black;
+}
+
+.metronome {
+    position: relative;
+    display: flex;
+    width: 50px; height: 50px;
+}
+
+.metronome-even {
+    background: white;
+}
+
+.metronome-odd {
+    background: black;
+}
